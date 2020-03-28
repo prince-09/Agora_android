@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/chart"
+            android:title="Dashboard"/>
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="Profile"/>
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/info"
+            android:title="About Us"/>
+    </group>
+
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/report_a_bug"
+                android:icon="@drawable/bug"
+                android:title="Report a bug"/>
+            <item
+                android:id="@+id/share_with_others"
+                android:icon="@drawable/connect"
+                android:title="Share with others"/>
+            <item
+                android:id="@+id/contact_us"
+                android:icon="@drawable/cha"
+                android:title="Contact Us"/>
+        </menu>
+    </item>
+</menu>

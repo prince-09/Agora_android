@@ -10,7 +10,7 @@
         android:id="@+id/logo"
         android:layout_width="100dp"
         android:layout_height="150dp"
-        android:layout_marginTop="68dp"
+
         android:src="@drawable/agora1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/text"
@@ -24,7 +24,7 @@
         android:textColor="#108941"
         android:textSize="30sp"
         android:id="@+id/text"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="0dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +33,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="8dp"
         android:layout_marginHorizontal="20dp"
         android:paddingHorizontal="30dp"
         android:text="Sed ut perspiciatis unde omnis iste natus error sit v\noluptatem accusantium doloremque laudantium, \ntotam rem aperiam, eaque ipsa quae ab illo inventore \nveritatis et quasi architecto beatae vitae dicta sunt\n explicabo Nemo enim ipsam voluptatem quia voluptas\n sit aspernatur aut odit aut fugit, sed quia consequuntur magni \ndolores eos qui ratione voluptatem sequi nesciunt. Neque\n porro quisquam est, qui dolorem ipsum quia dolor\n sit amet consectetur, adipisci velit, sed quia non\n numquameius modi tempora incidunt"
