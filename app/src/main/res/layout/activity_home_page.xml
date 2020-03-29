@@ -35,7 +35,7 @@
             app:layout_constraintTop_toTopOf="parent"></Button>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/totallayout1"
+            android:id="@+id/totalelectionlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
@@ -43,7 +43,7 @@
             android:background="@drawable/card_bg"
             android:paddingHorizontal="15dp"
             android:paddingVertical="20dp"
-            app:layout_constraintBottom_toTopOf="@+id/totallayout"
+            app:layout_constraintBottom_toTopOf="@+id/activeelectionlayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/createelection">
@@ -98,17 +98,17 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/totallayout"
+            android:id="@+id/activeelectionlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:background="@drawable/card_bg"
             android:paddingHorizontal="15dp"
             android:paddingVertical="20dp"
-            app:layout_constraintBottom_toTopOf="@+id/totallayout2"
+            app:layout_constraintBottom_toTopOf="@+id/pendingelectionlayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/totallayout1">
+            app:layout_constraintTop_toBottomOf="@+id/totalelectionlayout">
 
             <ImageView
                 android:id="@+id/totalmage"
@@ -160,17 +160,17 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/totallayout2"
+            android:id="@+id/pendingelectionlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:background="@drawable/card_bg"
             android:paddingHorizontal="15dp"
             android:paddingVertical="20dp"
-            app:layout_constraintBottom_toTopOf="@+id/totallayout3"
+            app:layout_constraintBottom_toTopOf="@+id/finishedelectionlayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/totallayout">
+            app:layout_constraintTop_toBottomOf="@+id/activeelectionlayout">
 
             <ImageView
                 android:id="@+id/totalmage2"
@@ -222,7 +222,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/totallayout3"
+            android:id="@+id/finishedelectionlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
@@ -233,7 +233,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.9"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/totallayout2">
+            app:layout_constraintTop_toBottomOf="@+id/pendingelectionlayout">
 
             <ImageView
                 android:id="@+id/totalmage3"

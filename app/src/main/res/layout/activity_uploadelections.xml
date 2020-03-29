@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Uploadelections">
 
-
-
     <ImageView
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -23,7 +21,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/important"
+        android:src="@drawable/impo"
         app:layout_constraintEnd_toStartOf="@+id/imageView9"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="parent"></ImageView>
@@ -68,70 +66,72 @@
         android:paddingVertical="15dp"
         android:paddingLeft="20dp"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@id/textView19"
+        app:layout_constraintBottom_toTopOf="@id/description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/important"></TextView>
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:background="@drawable/edittext_bg"
-        android:hint="Name of election"
+        android:hint="Description"
         android:paddingVertical="15dp"
         android:paddingLeft="20dp"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@id/textView20"
+        app:layout_constraintBottom_toTopOf="@id/votingalgorithm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18"></TextView>
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/votingalgorithm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:background="@drawable/edittext_bg"
-        android:hint="Name of election"
+        android:hint="Voting algorithm"
         android:paddingVertical="15dp"
         android:paddingLeft="20dp"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@id/textView21"
+        app:layout_constraintBottom_toTopOf="@id/startdate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/description"></TextView>
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/startdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:background="@drawable/edittext_bg"
-        android:hint="Name of election"
+        android:hint="Start date"
         android:paddingVertical="15dp"
         android:paddingLeft="20dp"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@id/textView22"
+        app:layout_constraintBottom_toTopOf="@id/enddate"
+        android:clickable="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/votingalgorithm"></TextView>
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/enddate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:background="@drawable/edittext_bg"
-        android:hint="Name of election"
+        android:hint="End date"
         android:paddingVertical="15dp"
         android:paddingLeft="20dp"
         android:textSize="18sp"
+        android:clickable="false"
         app:layout_constraintBottom_toTopOf="@+id/proceed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/startdate"></TextView>
 
     <Button
         android:id="@+id/proceed"
@@ -145,5 +145,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView22"></Button>
+        app:layout_constraintTop_toBottomOf="@+id/enddate"></Button>
 </androidx.constraintlayout.widget.ConstraintLayout>
