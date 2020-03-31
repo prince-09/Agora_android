@@ -65,6 +65,8 @@ public class AdapterView extends RecyclerView.Adapter<AdapterView.Myview> {
         return strings.size();
     }
 
+
+
     class Myview extends RecyclerView.ViewHolder {
         TextView electionName;
         ConstraintLayout mainlayout;

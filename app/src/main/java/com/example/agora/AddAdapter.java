@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -28,20 +29,32 @@ public class AddAdapter extends RecyclerView.Adapter<AddAdapter.myViewholder>{
     }
 
     @Override
-    public void onBindViewHolder(@NonNull myViewholder holder, int position) {
+    public void onBindViewHolder(@NonNull myViewholder holder, final int position) {
         holder.candidate.setText(strings.get(position));
+        holder.delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                removeAt(position);
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
         return strings.size();
     }
-
+    public void removeAt(int position){
+        strings.remove(position);
+        notifyDataSetChanged();
+        notifyItemRangeChanged(position,strings.size());
+    }
     public class myViewholder extends RecyclerView.ViewHolder{
         TextView candidate;
+        ImageView delete;
         public myViewholder(@NonNull View itemView) {
             super(itemView);
             candidate=itemView.findViewById(R.id.candidate);
+            delete =itemView.findViewById(R.id.delete);
         }
     }
 }

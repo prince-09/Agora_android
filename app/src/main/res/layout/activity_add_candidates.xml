@@ -7,9 +7,10 @@
     tools:context=".AddCandidates">
 
     <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginTop="16dp"
+        android:layout_marginStart="50dp"
         android:id="@+id/check"
         android:src="@drawable/checked"
         app:layout_constraintEnd_toStartOf="@+id/imageView8"
@@ -18,18 +19,18 @@
 
     <ImageView
         android:id="@+id/important"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/important"
+        android:src="@drawable/checked"
         app:layout_constraintEnd_toStartOf="@+id/imageView9"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="parent"></ImageView>
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/arrow"
         app:layout_constraintEnd_toStartOf="@+id/important"
@@ -38,8 +39,8 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/arrow"
         app:layout_constraintEnd_toStartOf="@+id/imageView10"
@@ -48,8 +49,9 @@
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="50dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/cancel"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
@@ -62,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="14dp"
-        android:text="Name of the candidate"
+        android:text="Name of the candidates"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"

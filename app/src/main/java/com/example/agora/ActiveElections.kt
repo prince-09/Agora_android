@@ -3,6 +3,7 @@ package com.example.agora
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -34,5 +35,6 @@ class ActiveElections : AppCompatActivity() {
 
         //now adding the adapter to recyclerview
         recycler.adapter = adapter
+        
     }
 }

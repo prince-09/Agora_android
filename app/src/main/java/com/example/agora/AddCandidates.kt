@@ -1,9 +1,11 @@
 package com.example.agora
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -24,7 +26,9 @@ class AddCandidates : AppCompatActivity() {
         val adapter = AddAdapter(users,this)
         addrecycler.adapter = adapter
         proceed.setOnClickListener {
-            
+            Toast.makeText(this,"You have successfully created the elecion",Toast.LENGTH_LONG).show()
+            startActivity(Intent(this,MainActivity::class.java))
+            finish()
         }
         add.setOnClickListener { 
             if(candidatename.text.toString()!=""){

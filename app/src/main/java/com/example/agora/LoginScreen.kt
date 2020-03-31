@@ -14,7 +14,8 @@ class LoginScreen : AppCompatActivity() {
         var login = findViewById<Button>(R.id.loginbtn);
         var signup=findViewById<Button>(R.id.signup);
         login.setOnClickListener {
-            startActivity(Intent(this,HomePage::class.java))
+            startActivity(Intent(this,MainActivity::class.java))
+            finish()
          }
         signup.setOnClickListener {
             startActivity(Intent(this,SignUpActivity::class.java))

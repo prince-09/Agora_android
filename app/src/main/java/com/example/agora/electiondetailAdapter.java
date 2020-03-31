@@ -41,12 +41,11 @@ public class electiondetailAdapter extends RecyclerView.Adapter<electiondetailAd
 
     class myview extends RecyclerView.ViewHolder{
         TextView name,noofvotes;
-        ImageView delete;
+
         public myview(@NonNull View itemView) {
             super(itemView);
             name=itemView.findViewById(R.id.name);
             noofvotes=itemView.findViewById(R.id.numberofvotes);
-            delete=itemView.findViewById(R.id.numberofvotes);
         }
     }
 }
