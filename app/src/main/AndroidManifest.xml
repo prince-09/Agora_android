@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Electiondetail"></activity>
+        <activity android:name=".ShareApp"></activity>
+        <activity android:name=".Electiondetail" />
         <activity android:name=".AddCandidates" />
         <activity android:name=".Uploadelections" />
         <activity android:name=".Contactus" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".ReportaBug" />
         <activity android:name=".AboutActiviy" />
-        <activity android:name=".HomePage"
-            ></activity>
+        <activity android:name=".HomePage" />
         <activity android:name=".SplashActivity" />
         <activity android:name=".TotalElections" />
         <activity android:name=".FinishedElections" />
@@ -26,9 +26,9 @@
         <activity android:name=".OtpActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginScreen" />
-        <activity android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            >
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

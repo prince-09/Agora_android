@@ -1,6 +1,7 @@
 package com.example.agora;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -51,6 +52,12 @@ public class AdapterView extends RecyclerView.Adapter<AdapterView.Myview> {
         Log.i("color",i+" ");
         holder.button.setBackgroundColor(context.getResources().getColor(R.color.blue));
         holder.mainlayout.setBackgroundColor(context.getResources().getColor(R.color.lightBlue));
+        holder.mainlayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                context.startActivity(new Intent(context,Electiondetail.class));
+            }
+        });
     }
 
     @Override

@@ -47,31 +47,32 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (menuItem.getItemId()) {
             case R.id.dashboard :
                 fragment=new HomePage();
-                Toast.makeText(this, "Dashboard clicked", Toast.LENGTH_SHORT).show();
+
                 break;
 
             case R.id.profile : {
                 fragment=new ProfileActivity();
-                Toast.makeText(this, "Profile clicked", Toast.LENGTH_SHORT).show();
+
                 break;
             }
             case R.id.about :
-                Toast.makeText(this, "About clicked", Toast.LENGTH_SHORT).show();
+
                 fragment=new AboutActiviy();
                 break;
 
             case R.id.contact_us :
-                Toast.makeText(this, "Contact Us clicked", Toast.LENGTH_SHORT).show();
+
                 fragment=new Contactus();
                 break;
 
             case R.id.report_a_bug :
-                Toast.makeText(this, "report a bug out clicked", Toast.LENGTH_SHORT).show();
+
                 fragment=new ReportaBug();
                 break;
 
             case R.id.share_with_others :
-                Toast.makeText(this, "share out clicked", Toast.LENGTH_SHORT).show();
+                fragment=new ShareApp();
+
                 break;
         }
         if(fragment!=null){
